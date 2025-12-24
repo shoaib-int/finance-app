@@ -10,7 +10,7 @@ from FastApi.database import SessionLocal, engine
 
 app = FastAPI()
 origins =[
-    "http://localhost:3000",
+    "http://localhost:3000","https://finance-app-p2nm.onrender.com"
 ]
 app.add_middleware(
     CORSMiddleware,
