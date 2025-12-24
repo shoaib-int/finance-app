@@ -4,8 +4,9 @@ from sqlalchemy.orm import Session
 from typing import Annotated,List
 from pydantic import BaseModel, ConfigDict
 
-import models
-from database import engine, SessionLocal
+from FastApi import models
+from FastApi.database import SessionLocal, engine
+
 
 app = FastAPI()
 origins =[

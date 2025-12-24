@@ -1,5 +1,6 @@
 from sqlalchemy import Column, Integer, String, Float, Boolean
-from database import Base
+from FastApi.database import Base
+
 
 class Transaction(Base):
     __tablename__ = "transactions"
