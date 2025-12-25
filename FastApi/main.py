@@ -9,12 +9,14 @@ from FastApi.database import SessionLocal, engine
 
 
 app = FastAPI()
-origins =[
-    "http://localhost:3000","https://finance-app-p2nm.onrender.com"
+origins = [
+    "http://localhost:3000",
+    "https://finance-5w2x55bxu-mohammad-shoaibs-projects-7578a7dd.vercel.app"
 ]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
